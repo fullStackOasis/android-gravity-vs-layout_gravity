@@ -16,3 +16,6 @@ This demo is just used as a quick visual reminder of the difference between `gra
 
 [Link to StackOverflow discussion](https://stackoverflow.com/questions/3482742/what-is-the-difference-between-gravity-and-layout-gravity-in-android)
 
+Screenshot of the demo:
+
+![Android layout_gravity vs gravity](https://github.com/fullStackOasis/android-gravity-vs-layout_gravity/raw/master/android-demo-layout_gravity-vs-gravity.png)
