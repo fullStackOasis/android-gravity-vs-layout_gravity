@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Using Android gravity - it is important to not set layout_width to wrap_content, otherwise the effect of gravity is obscured."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_margin="@dimen/text_view_margin"/>
+
+        <TextView
+            android:id="@+id/textViewGravityLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_layout_orange"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:gravity="left"
+            android:layout_margin="@dimen/text_view_margin"
+            android:text="this TextView gravity is left" />
+
+        <TextView
+            android:id="@+id/textViewGravityRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_layout_orange"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:gravity="right"
+            android:layout_margin="@dimen/text_view_margin"
+            android:text="this TextView gravity is right" />
+
+        <TextView
+            android:id="@+id/textViewGravityCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_layout_orange"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:gravity="center"
+            android:layout_margin="@dimen/text_view_margin"
+            android:text="this TextView gravity is center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutTop">
+
+        <TextView
+            android:id="@+id/textViewLayoutGravityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Using Android layout_gravity - it is important to not set width to match_parent, otherwise the effect of layout_gravity is obscured"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_margin="@dimen/text_view_margin"/>
+
+        <TextView
+            android:id="@+id/textViewLayoutGravityLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/border_layout"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="@dimen/text_view_margin"
+            android:text="this TextView layout_gravity is left" />
+
+        <TextView
+            android:id="@+id/textViewLayoutGravityRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/border_layout"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="@dimen/text_view_margin"
+            android:text="this TextView layout_gravity is right" />
+
+        <TextView
+            android:id="@+id/textViewLayoutGravityCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/border_layout"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="@dimen/text_view_margin"
+            android:text="this TextView layout_gravity is center" />
+
+    </LinearLayout>
+</LinearLayout>
